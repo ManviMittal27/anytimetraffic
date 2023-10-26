@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHRS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="x-icon" href="Image/car.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/fontawesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="index1.css">
+<body>
+
+    <div id="loader">
+        <div class="loader-container">
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+        </div>
+    </div>
+
+
+
+
+    <header>
+    <nav id="navbar">
+    <div id="logo">
+        <img src="Image/car.png" alt="Attac.com">
+        <b id="name">RHRS</b>
+    </div>
+    
+    <ul>
+        <li class="item"><a href="main1.html">Home</a></li>
+        <li class="item dropdown">
+            <a href="#service">Services</a>
+            <div class="dropdown-content">
+                <a href="#service" style="color:black;">Insurance</a>
+                <a href="#service" style="color:black;">Fastag Recharge</a>
+                <a href="#service" style="color:black;">Book Mechanic</a>
+                <a href="#service" style="color:black;">Online Challan</a>
+                <a href="#service" style="color:black;">Labour Services</a>
+                <a href="#service" style="color:black;">NHAI Assistance</a>
+            </div>
+        </li>
+        <li class="item"><a href="#news">News</a></li>
+        <li class="item"><a href="#member">Our Team</a></li>
+        <li class="item"><a href="#about">About Us</a></li>
+        <li class="item dropdown">
+          <a href="#"><i class="fa fa-user "></i><span id="username">  User1</span></a>
+          <div class="dropdown-content" style="height: 345px;width: 220px;left: -46px;color: black;">
+            <div style="height: 315px;width: 200px;padding: 5px;justify-content: center;margin: 2px auto;">
+              <img id="uid" src="profile.png" style="justify-content: center;height:65px ;width: 65px;border-radius: 50%;margin: 1px 64px;">
+              <h4 id="uname" style="text-align: center;">Guest User</h4>
+              <hr/>
+              <i class="fa fa-user-md"></i><a href="#" style="display: inline;text-decoration: none;"><span style="font-size: 15px;color: black;">Account Details</span></a><br>
+              <i class="fa fa-gear"></i><a href="#" style="display: inline;text-decoration: none;"><span style="font-size: 15px;color: black;">Setting</span></a><br>
+              <div style="display: none;" id="logout"><i class="fa fa-sign-out"></i><a href="#" style="display: inline;text-decoration: none;" onclick="signout()"><span style="font-size: 15px;color: black;">Log Out</span></a><br></div>
+              <hr/>
+              <i class="material-icons">feedback</i><a href="#" style="display: inline;"><span style="font-size: 15px;position: absolute;color: black;">Give Feedback</span></a><br>
+              <i class="material-icons">help</i><a href="#" style="display: inline;"><span style="font-size: 15px;position: absolute;color: black;">Help</span></a><br>
+            </div>
+          </div>
+      </li>
+        
+    </ul>
+</nav>
+</header>
+
+
+  <div id="content" style="justify-content: center;padding-top: 70px;min-width: 100px">
+    <h1 id="header" style="font-size: 80px; color: black;"><b>Real Help Real Service</b></h1>
+    <hr style="font-size: 20px; width: 800px;margin: auto;"/><br><br>
+    <p style="color: black;font-size: 25px;"><b>Stop worrying about the  patholes in the road... Just Enjoy!!...</b></p>
+    <p style="color: black;font-size: 25px;"><b> We are here to help you</b></p>
+    <button  id="signin" class="btn btn-dark" style="margin-right: 20px;"><a href="#" style="text-decoration: none; color: white;">LOG IN</a></button>
+    <button  id="sgbtn" class="btn btn-dark" style="margin-right: 20px;"><a href="#contact" style="text-decoration: none; color: white;">SIGN UP</a></button>
+</div>
+
+    <div id="comm">
+        <ul>
+            <li><a href="https://www.facebook.com/"><img id="logo1" src="Image/fb.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/home"><img id="logo2" src="Image/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox"><img id="logo3" src="Image/mail.png" alt="Gmail"></a></li>
+            <li><a href="https://www.instagram.com/"><img id="logo4" src="Image/insta.png" alt="Instagram"></a></li>
+        </ul>
+    </div>
+
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>LOG IN</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your Password">
+          <button type="button" id="btnToggle" class="toggle">
+            <i id="eyeIcon" class="fa fa-eye"></i>
+          </button>
+        </div>
+        <div class="for-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember Me</label>
+        </div>
+        <div class="form-element">
+          <button id="signbtn" onclick="Login()">Sign In</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Forget Password?</a>
+        </div>
+      </div>
+    </div>
+
+
+    <section  class="about " id="about">
+        <div class="container">
+            <div class="my-5" data-aos="fade-up" data-aos-offset="100" data-aos-duration="800">
+                <h1 class="text-center" style="font-size: 60px;" data-aos="fade-up" data-aos-offset="100" data-aos-duration="800">About <span class="text-primary">Us</span></h1>
+                <hr  class="w-25 m-auto"/>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+                    <h1 style="font-size: 45px;" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="800">What do You <span class="text-primary">want to know?<span></span></h1>
+                    <p style="font-size: 20px;" class="p-10" data-aos="zoom-in-left" data-aos-offset="200" data-aos-duration="800">We have planned to make a government service app for all types of road services and making challan in more effective way .This will be tested in economical, operational and technical areas .Planning for the quality assurance requirements and identification of the risks associated with the project is also done.</p>
+                    <button type="button" class="btn btn-light mb-5" data-aos="zoom-in-left" data-aos-offset="100" data-aos-duration="1400">More About Me</button>
+
+                    <div class="accordion" id="accordionExample" data-aos="fade-down-left" data-aos-offset="100" data-aos-duration="800">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Our Hobbies
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>To Do Lots Of Projects In Different Languages. </strong>Our Hobbies is generally to learn different types of computer languages that helps us in our future to create new and unique.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Our Qualifications
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Students Of Computer Science Engineering. </strong> We are in second year and we learn lot of computer languages like HTML,JavaScript,C,C++,Python etc. We also took part in Hackathons conducted by college. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Our Dream
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Be A Great Software Engineer... </strong>Today we are in CHITKARA UNIVERSITY and we are making a project that can be our future project also which is done on large scale. 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-aotu text-end" data-aos="zoom-in-right" data-aos-offset="300" data-aos-duration="1500">
+                    <div class="images-frame">
+                        <div class="images-slide">
+                           <div class="img-container"><img src="Image/1.jpg" alt="Informative News1"></div>
+                           <div class="img-container"><img src="Image/2.webp" alt="Informative News2"></div>
+                           <div class="img-container"><img src="Image/3.jpg" alt="Informative News3"></div>
+                           <div class="img-container"><img src="Image/4.webp" alt="Informative News4"></div>
+                           <div class="img-container"><img src="Image/5.jpg" alt="Informative News5"></div>
+                           <div class="img-container"><img src="Image/6.jpg" alt="Informative News6"></div>
+                           <div class="img-container"><img src="Image/7.jpg" alt="Informative News7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section  class="py-5 bg-light" style="height: 800px;" id="service">
+        <div class="container">
+            <div class="text-center ">
+                <h1  style="font-size: 60px;" data-aos="fade-up" data-aos-offset="100" data-aos-duration="800" >Our <span class="text-primary">Services</span></h1>
+                <hr  class="w-25 m-auto mb-5"/>
+            </div>
+            
+            <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card" data-aos="flip-left" data-aos-offset="200" data-aos-duration="1200" style="height: 295px;">
+                    <div class="card-body">
+                        <i class="fa fa-users bg-primary p-2 text-white rounded"></i>
+                      <h5 class="card-title">Insurance</h5>
+                      <p class="card-text">When you buy insurance, you purchase protection against unexpected financial losses. The insurance company pays you or someone you choose if something bad happens to you.</p>
+                      <a style="margin-top: 45px;" href="https://ci.policybazaar.com/?pb_source=google&pb_medium=cpc&pb_term=%2Bvehicle%20%2Binsurance&pb_campaign=Generic_New00Car_Insurance_Broad_networkg&gclid=CjwKCAjw__ihBhADEiwAXEazJrVOZVO6pNHggIJ00uL30oBc9fUMvzqevNdx-jOc_bA17tBIPX99WRoCisIQAvD_BwE" class="btn btn-primary">Insured Now!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card bg-primary text-white " data-aos="flip-up" data-aos-offset="200" data-aos-duration="1800" style="height: 295px;">
+                    <div class="card-body">
+                        <i class="fa fa-wrench bg-white p-2 text-dark rounded mb-2"></i>
+                      <h5 class="card-title">Labour Services</h5>
+                      <p class="card-text">The Central Labour Service (CLS) cadre is an Organized Group 'A' Central Civil Services of the Government of India. It was formed in February 1987 by amalgamating 3 bodies.</p>
+                      <a href="Labour.html" style="margin-top: 38px;" class="btn btn-light">Find Now!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card" data-aos="flip-right" data-aos-offset="200" data-aos-duration="2400">
+                    <div class="card-body">
+                        <i class="fa fa-car bg-primary p-2 text-white rounded"></i>
+                      <h5 class="card-title">FastTAG Recharge</h5>
+                      <p class="card-text">How FASTag recharge works?
+                        You can recharge your FASTag anytime and anywhere through Paytm. FASTag, that works on Radio Frequency Identification (RFID), and with the help of it, the toll tax is deducted from your FASTag account when you pass through a FASTag toll lane. </p>
+                      <a href="https://ihmcl.co.in/fastag-user/" class="btn btn-primary">Recharge Now!</a>
+                    </div>
+                  </div>
+            </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" data-aos="flip-left" data-aos-offset="200" data-aos-duration="1200" style="height: 247px;">
+                        <div class="card-body">
+                            <i class="fa fa-thumbs-up bg-primary p-2 text-white rounded"></i>
+                          <h5 class="card-title">Book Mechanic</h5>
+                          <p class="card-text">Get Vehicle repair service online at Droom. We have wide range of vehicle repair services package. Check automobile and vehicle servicing price online.
+                          </p>
+                          <a style="margin-top: 23px;" href="mechanic.html" class="btn btn-primary">Book Now!</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card bg-primary text-white " data-aos="flip-down" data-aos-offset="200" data-aos-duration="1800" style="height: 247px;"> 
+                        <div class="card-body">
+                            <i class="fa fa-car bg-white p-2 text-dark rounded mb-2"></i>
+                          <h5 class="card-title">Online Challan</h5>
+                          <p class="card-text">Digital Traffic/Transport Enforcement Solution An Initiative of Morth, Government of India. Check Online Services.</p>
+                          <a style="margin-top: 18px;" href="https://echallan.parivahan.gov.in/index/accused-challan" class="btn btn-light">Pay Online Now!</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" data-aos="flip-right" data-aos-offset="200" data-aos-duration="2400">
+                        <div class="card-body">
+                            <i class="fa fa-users bg-primary p-2 text-white rounded"></i>
+                          <h5 class="card-title">NHAI Assistance</h5>
+                          <p class="card-text"> National Highway Helpline number, providing 24x7 assistance to National Highway users on NHAI’s tolled stretches in case of Emergency/Non-Emergency situations.</p>
+                          <a href="https://ihmcl.co.in/24x7-national-highways-helpline-1033/" class="btn btn-primary">Book Now!</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="team my-20 text-center" id="member">
+        <div class="container">
+            <div class="text-center ">
+                <h1  style="font-size: 60px;" data-aos="fade-up" data-aos-offset="100" data-aos-duration="800">Our <span class="text-primary">Team</span></h1>
+                <hr  class="w-25 m-auto mb-5"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3 col-12 ">
+                <div class="card" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);height: 650px;" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="1200">
+                    <div class="card-body">
+                        <img src="admins/1.jpg" alt="Kunal" class="img-fluid rounded-circle border border-primary p-2">
+                      <h5 class="card-title mt-4" >Kunal</h5>
+                      <p class="card-text">Front-End and Back-End Developer</p>
+                      <hr/>
+                      <p>Phone: +91 94684 72728</p>
+                      <p>Occupation: Student</p>
+                      <a href="https://msng.link/o/?__kunal._.verma_=ig" class="btn btn-primary mt-4">Read More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-12 ">
+                <div class="card" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);height: 650px;" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="1500">
+                    <div class="card-body">
+                      <img src="admins/2.jpg" alt="Aman Singh" class="img-fluid rounded-circle border border-primary p-2" style="height: 345px;">
+                      <h5 class="card-title mt-4" >Aman Singh</h5>
+                      <p class="card-text">Front-End Developer and Tester</p>
+                      <hr/>
+                      <p>Phone: +91 87270 43272</p>
+            <p>Occupation: Student</p>
+                      <a href="https://msng.link/o/?aman__negi4=ig" class="btn btn-primary mt-4">Read More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-12 ">
+                <div class="card" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);height: 650px;" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="1800"> 
+                    <div class="card-body">
+                        <img src="admins/3.jpg" alt="Rahul Goyal" class="img-fluid rounded-circle border border-primary p-2">
+                      <h5 class="card-title mt-4">Rahul Goyal</h5>
+                      <p class="card-text">Front-End and Back-End Developer</p>
+                      <hr/>
+                      <p>Phone: +91 96462 62694</p>
+            <p>Occupation: Student</p>
+                      <a href="https://msng.link/o/?rahul._.goyal93=ig" class="btn btn-primary mt-4">Read More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 col-12 ">
+                <div class="card" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);height: 650px;" data-aos="zoom-in-left" data-aos-offset="200" data-aos-duration="2100">
+                    <div class="card-body">
+                        <img src="admins/4.jpg" alt="Manvi Mittal" class="img-fluid rounded-circle border border-primary p-2" style="height: 345px;">
+                      <h5 class="card-title mt-4">Manvi Mittal</h5>
+                      <p class="card-text">Front-End and Back-End Developer</p>
+                      <hr/>
+                      <p>Phone: +91 74176 88946</p>
+            <p>Occupation: Student</p>
+                      <a href="https://msng.link/o/?manvi27136=ig" class="btn btn-primary mt-4">Read More</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section  class="py-5 bg-light" style="height: 680px;" id="news">
+      <div class="container">
+          <div class="text-center ">
+              <h1  style="font-size: 60px;" data-aos="fade-up" data-aos-offset="100" data-aos-duration="800" >Latest <span class="text-primary">News</span></h1>
+              <hr  class="w-25 m-auto mb-5"/>
+          </div>
+          
+          <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+              <div class="card" data-aos="flip-left" data-aos-offset="200" data-aos-duration="1200">
+                  <div class="card-body">
+                    <image class="news" src="news/1.jpg"><br><br>
+                    <h5 class="card-title">Arunachal Pradesh sees 65% growth in construction of highways in eight years</h5>
+                    <p class="card-text">After the 2020 stand-off with the Chinese PLA, the Centre along with the state authorities and Border Roads Organisation (BRO) stepped up the pace of road construction and now are planning to initiate work on the third phase of the Indo-China Border Roads (ICBR-III) for which new projects have been identified. </p>
+                    <a href="https://economictimes.indiatimes.com/topic/road-projects" class="btn btn-primary">Read More..</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+              <div class="card bg-primary text-white " data-aos="flip-up" data-aos-offset="200" data-aos-duration="1800" style="height:435px">
+                  <div class="card-body">
+                    <image class="news" src="news/2.jpg"><br><br>
+                    <h5 class="card-title">76 big infra projects worth Rs 5.14 lakh cr evaluated under PM Gati Shakti in past 1 year</h5>
+                    <p class="card-text">Special secretary in the Department for Promotion of Industry and Internal Trade (DPIIT) Sumita Dawra said that the usage of the PM Gati Shakti - National Master Plan has increased by the central ministers and states also.</p>
+                    <a href="https://economictimes.indiatimes.com/topic/road-projects" style="margin-top: 25px;" class="btn btn-light">Read More..</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+              <div class="card" data-aos="flip-right" data-aos-offset="200" data-aos-duration="2400" style="height:435px">
+                  <div class="card-body">
+                    <image class="news" src="news/3.jpg"><br><br>
+                    <h5 class="card-title">CPPIB, OMERS on road to Rs 4,300 crore infusion in IndInfravit</h5>
+                    <p class="card-text">Canada Pension Plan Investment Board (CPPIB) and Ontario Municipal Employees Retirement System (OMERS) are planning to invest over ₹4,300 crore ($526 million) in IndInfravit, an Indian infrastructure investment trust (InvIT) majority owned by them.</p>
+                    <a href="https://economictimes.indiatimes.com/topic/road-projects" style="margin-top: 48px;" class="btn btn-primary">Read More..</a>
+                  </div>
+                </div>
+          </div>
+          </div>
+
+          <div class="row mt-5">
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                  <div class="card bg-primary text-white" data-aos="flip-left" data-aos-offset="200" data-aos-duration="1200">
+                      <div class="card-body">
+                        <image class="news" src="news/4.jpg"><br><br>
+                        <h5 class="card-title">Tenders for all weather Mughal road, Amarnath Marg in Kashmir to be floated this year: Nitin Gadkari</h5>
+                        <p class="card-text">Gadkari, while reviewing the progress of 13.14 kms long Zojila tunnel, which is the Asia’s longest tunnel that connects Sonamarg with the Kargil in Ladakh, said that 38 percent work on this project is complete and the government will try to ensure the completion of work before the 2026 deadline.</p>
+                        <a href="https://economictimes.indiatimes.com/topic/road-projects" class="btn btn-light">Read More..</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                  <div class="card" data-aos="flip-down" data-aos-offset="200" data-aos-duration="1800" style="height:435px">
+                      <div class="card-body">
+                        <image class="news" src="news/5.jpg"><br><br>
+                        <h5 class="card-title">Work on Zojila tunnel in full swing, over 40 pc drilling achieved; project to be complete by December 2026</h5>
+                        <p class="card-text">The tunnel project - through the mighty Zojila Pass at an altitude of 11,578 feet on the Srinagar-Kargil-Leh National highway - is of strategic importance as the highway remains closed during winters due to heavy snowfall, cutting off Ladakh region from Kashmir.</p>
+                        <a href="https://economictimes.indiatimes.com/topic/road-projects" style="margin-top: 25px;" class="btn btn-primary">Read More..</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                  <div class="card bg-primary text-white" data-aos="flip-right" data-aos-offset="200" data-aos-duration="2400" style="height:435px">
+                      <div class="card-body">
+                        <image class="news" src="news/6.jpg"><br><br>
+                        <h5 class="card-title">Road transport, highways sector has maximum number of delayed projects: Govt report</h5>
+                        <p class="card-text">As many as 823 projects are delayed, 346 projects reported cost overrun and 242 projects reported both time and cost overrun with respect to their original project implementation schedules.</p>
+                        <a href="https://economictimes.indiatimes.com/topic/road-projects" style="margin-top: 48px;" class="btn btn-light">Read More..</a>
+                      </div>
+                    </div>
+              </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" data-aos="flip-left" data-aos-offset="200" data-aos-duration="1200">
+                        <div class="card-body">
+                          <image class="news" src="news/7.png"><br><br>
+                          <h5 class="card-title">Mumbai's costliest project: Travel from Marine Drive to Bandra in 12 mins</h5>
+                          <p class="card-text">Mumbai's travel is drastically going to change for the ones who live there. With the completion of the Mumbai Coastal Road, travel time between Marine Drive to Bandra will be dramatically cut down to just 12 minutes when combined with other infrastructure projects. Currently, it takes around 40 minutes to reach from one point to the other.</p>
+                          <a href="https://economictimes.indiatimes.com/topic/road-projects" class="btn btn-primary">Read More..</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card bg-primary text-white " data-aos="flip-down" data-aos-offset="200" data-aos-duration="1800">
+                        <div class="card-body">
+                          <image class="news" src="news/8.jpg"><br><br>
+                          <h5 class="card-title">Steel slag road technology a boon to BRO: Niti Aayog member</h5>
+                          <p class="card-text">Steel slag bituminous surfacing due to its inherent high strength and stiffness will offer a more durable heavy duty road surface in face of inclement weather conditions in the region, he said. Project Arunank Chief Engineer Brig A S Kanwar highlighted the various technological initiatives of BRO across various border states including Arunachal Pradesh.</p>
+                          <a href="https://economictimes.indiatimes.com/topic/road-projects" class="btn btn-light">Read More..</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" data-aos="flip-right" data-aos-offset="200" data-aos-duration="2400" style="height:435px">
+                        <div class="card-body">
+                          <image class="news" src="news/9.jpg"><br><br>
+                          <h5 class="card-title">Govt says 70 projects worth Rs 2,856 cr sanctioned under Sagarmala Programme</h5>
+                          <p class="card-text">In a written reply to the Lok Sabha, Union Ports, Shipping and Waterways minister Sarbananda Sonowal said various initiatives and projects have been undertaken to facilitate shifting of cargo from conventional land-based transportation to coastal shipping mode.</p>
+                          <a href="https://economictimes.indiatimes.com/topic/road-projects" style="margin-top: 25px;" class="btn btn-primary">Read More..</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+      </div>
+  </section>
+
+    <section class="contact my-20 py-5" id="contact">
+        <div class="container">
+            <div class="text-center ">
+                <h1  style="font-size: 60px;" data-aos="fade-up" data-aos-offset="100" data-aos-duration="800">Feel Free <span class="text-primary">To Connect</span></h1>
+                <hr  class="w-25 m-auto "/>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
+                    <form class="row g-3 mt-5 border p-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@mail.com">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="$DVs@Eq5v5ss">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="UserName" class="form-label">User Name</label>
+                          <input type="text" class="form-control" id="UserName" placeholder="Elon Musk">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="ProfileImage" class="form-label">Profile Image</label>
+                          <input type="file" class="form-control" id="ProfileImage" accept="image/*">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity" placeholder="Enter Your City">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Chandigarh</option>
+                            <option>Haryana</option>
+                            <option>Punjab</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Rajasthan</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Gujrat</option>
+                            <option>Bihar</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Chennai</option>
+                            <option>Jammu and Kashmir</option>
+                            <option>Kerala</option>
+                            <option>Bengal</option>
+                            <option>Tamil Nadu</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary" id="signup" onclick="add()">Sign Up</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end" data-aos="fade-up"  data-aos-offset="200" data-aos-duration="2000">
+                    <img src="help.jpg" class="img-fluid img-thumbnail p-2 mt-5" style="margin-left:40px; height: 400px;" alt="We Are Here To Help You!!..">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div>
+        <a href="#navbar"><img src="top.png" alt="Back To Top" style="height:50px;width: 50px;margin-left: 1450px;margin-bottom: 20px;"></a>
+    </div>
+
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div style="display: none;"><iframe width="560" height="315" src="https://www.youtube.com/embed/NBTfn8ZnwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+    <footer>
+      <section style="background-color: whitesmoke;margin-top: 10px;padding: 35px;">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12" style="padding-left: 50px;">
+            <ul type="none">
+              <li style="padding: 10px;"><h1>Company</h1></li>
+              <li style="padding: 5px;">Navigate your next</li>
+              <li style="padding: 5px;">About Us</li>
+              <li style="padding: 5px;">Careers</li>
+              <li style="padding: 5px;">ESG</li>
+              <li style="padding: 5px;">Investors</li>
+              <li style="padding: 5px;">Newsroom</li>
+              <li style="padding: 5px;">Alumni</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <ul type="none">
+              <li style="padding: 10px;"><h1>Support</h1></li>
+              <li style="padding: 5px;">Terms of Use</li>
+              <li style="padding: 5px;">Privacy Statement</li>
+              <li style="padding: 5px;">Cookie Policy</li>
+              <li style="padding: 5px;">Safe Harbour Provision</li>
+              <li style="padding: 5px;">TradeMarks</li>
+              <li style="padding: 5px;">Modern Slavery Statement</li>
+              <li style="padding: 5px;">Payment Guide For Suppliers</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <ul type="none">
+              <li><h1>Connect With Us</h1></li>
+              <li><i style="padding: 15px;" class="fa fa-twitter fa-2x"></i><i style="padding: 15px;" class="fa fa-facebook-official fa-2x"></i><i style="padding: 15px;" class="fa fa-linkedin fa-2x"></i><i style="padding: 15px;" class="fa fa-youtube-play fa-2x"></i><i style="padding-left: 25px;" class="fa fa-instagram fa-2x"></i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        <div class="container-fluid bg-primary p-2 text-center text-white fs-5"> Developed By Chitkara University Students      ||    Copyright@RHRS.com </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+<script>
+    var loader = document.getElementById("loader");
+
+    window.addEventListener("load" ,function(){
+        loader.style.display = "none";
+    });
+    document.querySelector("#signin").addEventListener("click",function(){
+      document.querySelector(".popup").classList.add("active");
+    });
+    document.querySelector(".popup .close-btn").addEventListener("click",function(){
+      document.querySelector(".popup").classList.remove("active");
+    });
+</script>
+<script src="java.js"></script>
+
+
+</body>
+</html>
